@@ -46,8 +46,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 nav .btn{padding:11px 22px}
 
 /* hero */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;padding:150px 0 50px;background:#1d2a23 url(img/piscina-entardecer.webp) center/cover no-repeat}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.15) 40%,rgba(10,20,15,.75) 100%)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;padding:150px 0 50px;background:#1d2a23 url(img/vista-aerea-mar.webp) center 30%/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.35) 40%,rgba(10,20,15,.8) 100%)}
 .hero .wrap{position:relative;width:100%}
 .hero .eyebrow{color:var(--gold)}
 .hero h1{font-size:clamp(2.8rem,6vw,5rem);font-weight:500;margin:14px 0 18px;max-width:900px}
@@ -159,8 +159,8 @@ details[open] summary:after{content:"–"}
 details p{color:var(--mut);margin:10px 0 0}
 
 /* final */
-.final{position:relative;color:#fff;text-align:center;background:url(img/jardim-noite.webp) center/cover}
-.final:before{content:"";position:absolute;inset:0;background:rgba(20,40,30,.72)}
+.final{position:relative;color:#fff;text-align:center;background:url(img/praia-falesias.webp) center/cover}
+.final:before{content:"";position:absolute;inset:0;background:rgba(15,35,40,.55)}
 .final .wrap{position:relative}
 .final h2{font-size:clamp(2.6rem,5.5vw,4.4rem);margin:12px 0 16px}
 .final p{font-size:18px;opacity:.92;max-width:560px;margin:0 auto 32px}
@@ -218,7 +218,7 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="direct-badge"><i></i>Reserve direto com a gente: atendimento pelo WhatsApp</div>
     <div class="eyebrow">Trancoso · Bahia</div>
-    <h1>Seu refúgio entre <em>coqueiros</em>, a poucos passos do mar.</h1>
+    <h1>Seu refúgio entre <em>coqueiros</em>, com o mar logo ali.</h1>
     <p class="lead">Bangalôs e suítes cercados por jardins tropicais, café da manhã com frutas da estação e o ritmo tranquilo do sul da Bahia.</p>
 
     <form class="book" id="reservar" novalidate>
@@ -241,7 +241,7 @@ footer a:hover{color:#fff}
 
 <div class="perks">
   <div class="wrap">
-    <span>Café da manhã incluso</span><span>Piscina e jardim tropical</span><span>Praia a 5 min a pé</span><span>Ar-condicionado e Wi-Fi</span><span>Atendimento direto pelo WhatsApp</span>
+    <span>Café da manhã incluso</span><span>Piscina e jardim tropical</span><span>Pé na areia</span><span>Ar-condicionado e Wi-Fi</span><span>Atendimento direto pelo WhatsApp</span>
   </div>
 </div>
 
@@ -288,11 +288,11 @@ footer a:hover{color:#fff}
         </div>
       </div>
       <div class="room">
-        <div class="img"><img src="img/sala-bangalo.webp" alt="Sala do Bangalô Família com sofá em alvenaria e teto de piaçava" loading="lazy"><span class="cap">Até 4 pessoas</span></div>
+        <div class="img"><img src="img/quarto-tres-camas.webp" alt="Bangalô Família com três camas com dossel e rede" loading="lazy"><span class="cap">Até 4 pessoas</span></div>
         <div class="body">
           <h3>Bangalô Família</h3>
-          <p>Bangalô com sala ampla, teto de piaçava e janela para o jardim. Espaço de sobra para a família.</p>
-          <div class="amen"><span>Sala de estar</span><span>Smart TV</span><span>2 ambientes</span><span>Frigobar</span></div>
+          <p>Três camas com dossel, rede no jardim privativo e uma sala ampla com teto de piaçava. Espaço de sobra para a família.</p>
+          <div class="amen"><span>3 camas + sala</span><span>Rede privativa</span><span>Smart TV</span><span>Frigobar</span></div>
           <button class="btn btn-dark" data-room="Bangalô Família">Consultar este bangalô</button>
         </div>
       </div>
@@ -346,6 +346,10 @@ footer a:hover{color:#fff}
       <img src="img/cafe-frutas.webp" alt="Frutas do café da manhã">
       <img class="wide" src="img/jardim-dia.webp" alt="Jardim tropical durante o dia">
       <img class="wide" src="img/cafe-buffet.webp" alt="Buffet do café da manhã">
+      <img class="big" src="img/vista-aerea-mar.webp" alt="Vista aérea da pousada com o mar ao fundo">
+      <img src="img/quarto-tres-camas.webp" alt="Quarto com três camas com dossel">
+      <img src="img/banheiro.webp" alt="Banheiro com bancada de madeira">
+      <img class="wide" src="img/praia-falesias.webp" alt="Praia com falésias e mar azul-turquesa">
     </div>
   </div>
 </section>
@@ -374,7 +378,7 @@ footer a:hover{color:#fff}
       <h2>Pertinho de tudo, longe do barulho.</h2>
       <p style="color:var(--mut);font-size:17px">Trancoso, sul da Bahia. Endereço completo enviado na confirmação da reserva.</p>
       <ul>
-        <li><span>Praia mais próxima</span><span>5 min a pé</span></li>
+        <li><span>Praia</span><span>Pé na areia</span></li>
         <li><span>Quadrado de Trancoso</span><span>8 min de carro</span></li>
         <li><span>Aeroporto de Porto Seguro</span><span>~1h de carro</span></li>
         <li><span>Estacionamento</span><span>Privativo e gratuito</span></li>
