@@ -40,9 +40,13 @@ Esse site que você está vendo agora é uma demonstração. É assim que a sua 
 
 E eu não sou só designer. Eu já vendi os meus próprios produtos digitais. Eu sei o que faz alguém clicar em "reservar".
 
-O site fica pronto em quarenta e oito horas, por trezentos e noventa e sete reais. Menos do que você paga de comissão em duas reservas.
+E é rápido: assim que você me envia o pedido, eu mesmo já começo a montar. Nas primeiras horas depois da sua aprovação, o seu site já está publicado, no ar, recebendo reservas.
+
+Tudo isso por trezentos e noventa e sete reais. Menos do que você paga de comissão em duas reservas.
 
 Metade para começar... e a outra metade só quando o site estiver no ar e você aprovar.
+
+E você ainda tem garantia estendida de noventa dias, com manutenções gratuitas. Precisou trocar uma foto, um preço, uma informação? Eu ajusto para você, sem custo nenhum.
 
 A alta temporada está aí. Réveillon, janeiro, Carnaval... cada reserva que entra pelo aplicativo é comissão que não volta. Por isso, eu estou pegando poucas pousadas por semana.
 
@@ -65,8 +69,10 @@ Visuais que Vendem. Seu hóspede, direto com você.
 | "Sem comissão. Sem mensalidade..." | 3 selos: ✅ Sem comissão ✅ Sem mensalidade ✅ Fácil | **Simplicidade** |
 | "Esse site que você está vendo agora é uma demonstração" | Site no computador e no celular lado a lado | **Prova** |
 | "já vendi os meus próprios produtos digitais" | Print da sua página de vendas / feedbacks | **Autoridade / prova social** |
-| "quarenta e oito horas... trezentos e noventa e sete reais" | **48h** + **R$ 397** em destaque + "menos que 2 comissões" | **Ancoragem de preço** |
-| "a outra metade só quando você aprovar" | Selo **"Só paga o restante quando aprovar"** | **Garantia / reduz risco** |
+| "assim que você me envia o pedido, eu mesmo já começo a montar... nas primeiras horas" | Linha do tempo animada: **Pedido → Montagem → Aprovação → No ar em poucas horas** | **Velocidade / facilidade** |
+| "trezentos e noventa e sete reais... menos do que duas comissões" | **R$ 397** em destaque + "menos que 2 comissões" | **Ancoragem de preço** |
+| "a outra metade só quando você aprovar" | Selo **"Só paga o restante quando aprovar"** | **Reduz risco** |
+| "garantia estendida de noventa dias, com manutenções gratuitas" | Selo grande **"90 dias de garantia + manutenção grátis"** | **Garantia / segurança** |
 | "Réveillon, janeiro, Carnaval... poucas pousadas por semana" | Calendário com datas marcando lotado | **Urgência + escassez** |
 | "Eu monto uma prévia... sem compromisso" | Print de uma prévia + botão do WhatsApp | **Reciprocidade + CTA** |
 | "Seu hóspede, direto com você." | Logo + WhatsApp (11) 95936-2012 + link do portfólio | **Marca / fechamento** |
@@ -83,11 +89,16 @@ O hóspede te acha no Booking, procura o seu Instagram para falar direto... não
 
 Eu sou o Claudio, da Visuais que Vendem. Eu crio o site da sua pousada: o hóspede escolhe as datas e cai direto no seu WhatsApp. Sem comissão.
 
-Pronto em quarenta e oito horas, por menos do que duas comissões. E você só paga o restante quando aprovar.
+Você aprova, e nas primeiras horas o site já está no ar. Custa menos do que duas comissões, você só paga o restante quando aprovar, e ainda tem noventa dias de garantia com manutenção grátis.
 
 Me chama no WhatsApp: eu monto uma prévia da sua pousada, de graça.
 
 ---
+
+## 📝 Combine por escrito com cada cliente
+- **"Primeiras horas":** conta a partir da aprovação da prévia **e** do recebimento das fotos e informações da pousada.
+- **Garantia de 90 dias:** defina o que entra. Sugestão: correções e pequenas trocas de fotos, textos e preços. Página nova ou função nova é orçada à parte.
+- Depois dos 90 dias, ofereça a **manutenção mensal de R$ 49**.
 
 ## 💡 Dicas para o vídeo vender mais
 1. **Legenda na tela o tempo todo**: muita gente assiste sem som.
