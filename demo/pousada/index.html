@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site de Demonstração · Pousada | Visuais que Vendem</title>
+<meta name="description" content="Bangalôs e suítes entre coqueiros, a poucos minutos da praia. Reserve direto pelo WhatsApp e ganhe benefícios exclusivos.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#F7F1E8;--sand2:#EFE5D5;--ink:#22302A;--mut:#6B6F68;--green:#1F4D3A;--green2:#2E6B50;--terra:#C4683A;--gold:#D9A441;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.05;margin:0;letter-spacing:-.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--terra)}
+section{padding:96px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 52px}
+.sec-head h2{font-size:clamp(2.3rem,4.5vw,3.4rem);margin:12px 0}
+.sec-head p{color:var(--mut);font-size:17px;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,background .2s}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1ebe5b;transform:translateY(-1px)}
+.btn-dark{background:var(--green);color:#fff}
+.btn-dark:hover{background:var(--green2)}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* demo ribbon */
+.demo{background:var(--ink);color:#E8E2D6;text-align:center;font-size:12.5px;padding:8px 16px;letter-spacing:.02em}
+.demo b{color:var(--gold)}
+
+/* nav */
+nav{position:absolute;top:36px;left:0;right:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{color:#fff;display:flex;flex-direction:column;line-height:1}
+.logo strong{font-family:'Cormorant Garamond';font-size:26px;font-weight:700;letter-spacing:.02em}
+.logo span{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;opacity:.85;margin-top:4px}
+.nav-l{display:flex;gap:30px;color:#fff;font-size:14px;font-weight:500}
+.nav-l a{opacity:.9}.nav-l a:hover{opacity:1}
+nav .btn{padding:11px 22px}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;padding:150px 0 50px;background:#1d2a23 url(img/piscina-entardecer.webp) center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.15) 40%,rgba(10,20,15,.75) 100%)}
+.hero .wrap{position:relative;width:100%}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(2.8rem,6vw,5rem);font-weight:500;margin:14px 0 18px;max-width:900px}
+.hero h1 em{font-style:italic;color:#F3D9A6}
+.hero p.lead{font-size:19px;max-width:560px;opacity:.92;margin:0 0 30px}
+.direct-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 16px;font-size:13.5px;margin-bottom:22px}
+.direct-badge i{width:8px;height:8px;border-radius:50%;background:#4ADE80;box-shadow:0 0 0 4px rgba(74,222,128,.25)}
+
+/* booking box */
+.book{background:#fff;color:var(--ink);border-radius:20px;padding:18px;display:grid;grid-template-columns:1.2fr 1fr 1fr .8fr .8fr auto;gap:10px;align-items:end;box-shadow:0 30px 60px rgba(0,0,0,.35);margin-top:34px}
+.book label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:0 0 6px 4px}
+.book select,.book input{width:100%;height:50px;border:1px solid #E2DCD0;border-radius:12px;padding:0 12px;font:500 15px Inter,sans-serif;color:var(--ink);background:#FBF8F3;appearance:none;-webkit-appearance:none}
+.book select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B6F68' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:30px}
+.book input:focus,.book select:focus{outline:2px solid var(--green2);outline-offset:1px}
+.book .btn{height:50px;border-radius:12px;white-space:nowrap}
+.book-note{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--mut);padding:4px 4px 0}
+.book-note b{color:var(--green)}
+.err{color:#B3261E;font-weight:600}
+
+/* perks */
+.perks{background:var(--green);color:#EAF1EC;padding:28px 0}
+.perks .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px 28px;font-size:14.5px}
+.perks span{display:flex;align-items:center;gap:10px}
+.perks span:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* sobre */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about .ph{position:relative}
+.about .ph img{border-radius:22px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.about .ph .stamp{position:absolute;right:-26px;bottom:40px;background:var(--sand);border-radius:18px;padding:18px 22px;box-shadow:0 20px 40px rgba(0,0,0,.15);text-align:center}
+.stamp strong{display:block;font-family:'Cormorant Garamond';font-size:44px;line-height:1;color:var(--green)}
+.stamp small{font-size:12px;color:var(--mut)}
+.about h2{font-size:clamp(2.3rem,4vw,3.2rem);margin:12px 0 20px}
+.about p{color:var(--mut);font-size:17px}
+.about ul{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about li{display:flex;gap:10px;font-size:15px}
+.about li:before{content:"✓";color:var(--terra);font-weight:700}
+
+/* acomodações */
+.rooms{background:var(--sand2)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.room{background:#fff;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(34,48,42,.06)}
+.room .img{position:relative}
+.room img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.room .cap{position:absolute;left:14px;top:14px;background:rgba(255,255,255,.92);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600}
+.room .body{padding:24px;display:flex;flex-direction:column;flex:1}
+.room h3{font-size:28px;margin-bottom:6px}
+.room p{color:var(--mut);font-size:15px;margin:0 0 14px}
+.amen{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.amen span{font-size:12px;background:var(--sand);border-radius:999px;padding:5px 10px;color:#4b4f48}
+.room .btn{margin-top:auto}
+
+/* direto */
+.direct{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
+.direct h2{font-size:clamp(2.3rem,4vw,3.2rem);margin:12px 0 18px}
+.direct p{color:var(--mut);font-size:17px}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dcard{background:#fff;border-radius:18px;padding:22px;border:1px solid #EDE5D8}
+.dcard .ic{font-size:26px;margin-bottom:8px}
+.dcard strong{display:block;font-size:16px;margin-bottom:4px}
+.dcard span{font-size:14px;color:var(--mut)}
+
+/* café */
+.cafe{position:relative;color:#fff;padding:0}
+.cafe .bg{position:relative;min-height:560px;background:url(img/cafe-buffet.webp) center/cover;display:flex;align-items:center}
+.cafe .bg:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,30,25,.85) 0%,rgba(20,30,25,.45) 55%,rgba(20,30,25,0) 100%)}
+.cafe .wrap{position:relative;width:100%}
+.cafe .txt{max-width:500px}
+.cafe .eyebrow{color:var(--gold)}
+.cafe h2{font-size:clamp(2.4rem,4.5vw,3.6rem);margin:12px 0 16px}
+.cafe p{font-size:17px;opacity:.92}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:16px;cursor:zoom-in;transition:transform .3s}
+.gal img:hover{transform:scale(1.015)}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .wide{grid-column:span 2}
+.lb{position:fixed;inset:0;background:rgba(10,14,12,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:90vh;border-radius:12px}
+
+/* avaliações */
+.revs{background:var(--sand2)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:#fff;border-radius:18px;padding:26px}
+.stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px}
+.rev p{margin:0 0 16px;font-size:15.5px}
+.rev small{color:var(--mut)}
+.score{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-top:34px;color:var(--mut);font-size:14px}
+.score b{font-family:'Cormorant Garamond';font-size:30px;color:var(--green);margin-right:6px}
+.illu{text-align:center;font-size:12px;color:var(--mut);margin-top:16px;font-style:italic}
+
+/* local */
+.loc{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center}
+.loc h2{font-size:clamp(2.3rem,4vw,3.2rem);margin:12px 0 18px}
+.loc ul{list-style:none;padding:0;margin:20px 0 0}
+.loc li{display:flex;justify-content:space-between;border-bottom:1px solid #E2DCD0;padding:12px 0;font-size:15.5px}
+.loc li span:last-child{color:var(--terra);font-weight:600}
+.map{border-radius:22px;overflow:hidden;height:400px;background:#ddd}
+.map iframe{width:100%;height:100%;border:0}
+
+/* faq */
+details{border-bottom:1px solid #E2DCD0;padding:20px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--terra);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin:10px 0 0}
+
+/* final */
+.final{position:relative;color:#fff;text-align:center;background:url(img/jardim-noite.webp) center/cover}
+.final:before{content:"";position:absolute;inset:0;background:rgba(20,40,30,.72)}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(2.6rem,5.5vw,4.4rem);margin:12px 0 16px}
+.final p{font-size:18px;opacity:.92;max-width:560px;margin:0 auto 32px}
+.final .eyebrow{color:var(--gold)}
+
+footer{background:var(--ink);color:#C9C4B8;padding:50px 0 90px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;margin:0 0 10px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+footer a:hover{color:#fff}
+.credit{border-top:1px solid #34443c;margin-top:36px;padding-top:20px;text-align:center;font-size:12.5px;color:#8f8a7f}
+.credit a{color:var(--gold)}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:40;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.fab svg{width:32px;height:32px;fill:#fff}
+
+@media (max-width:980px){
+  .nav-l{display:none}
+  .book{grid-template-columns:1fr 1fr}
+  .book .full{grid-column:1/-1}
+  .about,.direct,.loc{grid-template-columns:1fr;gap:40px}
+  .about .ph .stamp{right:12px}
+  .grid3,.rgrid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .gal .big{grid-column:1/-1;grid-row:span 2}
+  .gal .wide{grid-column:1/-1}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  section{padding:70px 0}
+  .hero{padding:150px 0 30px;min-height:0}
+  .hero p.lead{font-size:17px}
+  nav .btn{display:none}
+  .book{padding:14px}
+  .about ul,.dgrid{grid-template-columns:1fr}
+  .perks .wrap{justify-content:flex-start}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="demo">✨ <b>Site de demonstração</b> · veja como o site da sua pousada pode ficar · criado por Visuais que Vendem</div>
+
+<nav>
+  <div class="wrap">
+    <a href="#topo" class="logo"><strong>Site de Demonstração</strong><span>Sua pousada aqui</span></a>
+    <div class="nav-l">
+      <a href="#sobre">A pousada</a><a href="#acomodacoes">Acomodações</a><a href="#cafe">Café</a><a href="#galeria">Galeria</a><a href="#local">Localização</a>
+    </div>
+    <a href="#reservar" class="btn btn-wa">Reservar direto</a>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <div class="direct-badge"><i></i>Reserve direto com a gente: atendimento pelo WhatsApp</div>
+    <div class="eyebrow">Trancoso · Bahia</div>
+    <h1>Seu refúgio entre <em>coqueiros</em>, a poucos passos do mar.</h1>
+    <p class="lead">Bangalôs e suítes cercados por jardins tropicais, café da manhã com frutas da estação e o ritmo tranquilo do sul da Bahia.</p>
+
+    <form class="book" id="reservar" novalidate>
+      <div class="full"><label for="acomod">Acomodação</label>
+        <select id="acomod">
+          <option>Qualquer acomodação</option>
+          <option>Bangalô Coqueiral</option>
+          <option>Suíte Master com Hidro</option>
+          <option>Bangalô Família</option>
+        </select></div>
+      <div><label for="in">Check-in</label><input type="date" id="in" required></div>
+      <div><label for="out">Check-out</label><input type="date" id="out" required></div>
+      <div><label for="ad">Adultos</label><select id="ad"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+      <div><label for="cr">Crianças</label><select id="cr"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <button type="submit" class="btn btn-wa full"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm5.8 15.2c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>Consultar disponibilidade</button>
+      <div class="book-note"><span id="nights">Escolha as datas da sua estadia</span><span>Reserva direta: <b>sem taxas de plataforma</b> + late checkout*</span></div>
+    </form>
+  </div>
+</header>
+
+<div class="perks">
+  <div class="wrap">
+    <span>Café da manhã incluso</span><span>Piscina e jardim tropical</span><span>Praia a 5 min a pé</span><span>Ar-condicionado e Wi-Fi</span><span>Atendimento direto pelo WhatsApp</span>
+  </div>
+</div>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div class="ph">
+      <img src="img/jardim-dia.webp" alt="Jardim tropical com coqueiros e piscina ao fundo" loading="lazy">
+      <div class="stamp"><strong>9,6</strong><small>nota média dos hóspedes</small></div>
+    </div>
+    <div>
+      <div class="eyebrow">A pousada</div>
+      <h2>Um jardim de coqueiros para desacelerar.</h2>
+      <p>A pousada nasceu do sonho de receber pessoas como se recebe em casa. São poucas acomodações, espalhadas por um jardim tropical de 8 mil m², para garantir silêncio, privacidade e atenção em cada detalhe.</p>
+      <p>Aqui o dia começa com café da manhã sem pressa e termina com o céu colorido sobre os coqueiros.</p>
+      <ul><li>Apenas 8 acomodações</li><li>Piscina com espreguiçadeiras</li><li>Bar no jardim</li><li>Estacionamento privativo</li><li>Pet friendly (consulte)</li><li>Atendimento dos donos</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="rooms" id="acomodacoes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Acomodações</div>
+      <h2>Escolha o seu cantinho</h2>
+      <p>Todas com ar-condicionado, Wi-Fi, enxoval de algodão e café da manhã incluso.</p>
+    </div>
+    <div class="grid3">
+      <div class="room">
+        <div class="img"><img src="img/bangalo-fachada.webp" alt="Bangalô com telhado de piaçava e deck de madeira no jardim" loading="lazy"><span class="cap">Até 3 pessoas</span></div>
+        <div class="body">
+          <h3>Bangalô Coqueiral</h3>
+          <p>Bangalô independente com telhado de piaçava, deck de madeira e redes, cercado pelo jardim tropical.</p>
+          <div class="amen"><span>Deck com redes</span><span>Cama king</span><span>Ar-condicionado</span><span>Frigobar</span></div>
+          <button class="btn btn-dark" data-room="Bangalô Coqueiral">Consultar este bangalô</button>
+        </div>
+      </div>
+      <div class="room">
+        <div class="img"><img src="img/quarto-dossel.webp" alt="Suíte Master com cama de dossel e piso de madeira" loading="lazy"><span class="cap">Casal</span></div>
+        <div class="body">
+          <h3>Suíte Master com Hidro</h3>
+          <p>Nossa suíte mais romântica: cama com dossel, piso de madeira e banheiro com hidromassagem.</p>
+          <div class="amen"><span>Hidromassagem</span><span>Cama king</span><span>Amenities</span><span>Roupões</span></div>
+          <button class="btn btn-dark" data-room="Suíte Master com Hidro">Consultar esta suíte</button>
+        </div>
+      </div>
+      <div class="room">
+        <div class="img"><img src="img/sala-bangalo.webp" alt="Sala do Bangalô Família com sofá em alvenaria e teto de piaçava" loading="lazy"><span class="cap">Até 4 pessoas</span></div>
+        <div class="body">
+          <h3>Bangalô Família</h3>
+          <p>Bangalô com sala ampla, teto de piaçava e janela para o jardim. Espaço de sobra para a família.</p>
+          <div class="amen"><span>Sala de estar</span><span>Smart TV</span><span>2 ambientes</span><span>Frigobar</span></div>
+          <button class="btn btn-dark" data-room="Bangalô Família">Consultar este bangalô</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap direct">
+    <div>
+      <div class="eyebrow">Reserve direto</div>
+      <h2>Reservando com a gente, você ganha mais.</h2>
+      <p>Falando direto com a pousada, você tira dúvidas na hora, escolhe a melhor acomodação para o seu grupo e ainda leva mimos que só quem reserva por aqui recebe.</p>
+      <a href="#reservar" class="btn btn-wa" style="margin-top:14px">Quero reservar direto</a>
+    </div>
+    <div class="dgrid">
+      <div class="dcard"><div class="ic">🕑</div><strong>Late checkout</strong><span>Saída até às 15h, sujeito à disponibilidade.</span></div>
+      <div class="dcard"><div class="ic">🍹</div><strong>Drink de boas-vindas</strong><span>Um suco ou caipirinha no bar do jardim.</span></div>
+      <div class="dcard"><div class="ic">💬</div><strong>Atendimento humano</strong><span>Fale direto com quem cuida da pousada.</span></div>
+      <div class="dcard"><div class="ic">🌴</div><strong>Dicas da região</strong><span>Roteiro de praias e restaurantes preparado por nós.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cafe" id="cafe">
+  <div class="bg">
+    <div class="wrap">
+      <div class="txt">
+        <div class="eyebrow">Café da manhã</div>
+        <h2>Frutas da estação, bolos caseiros e tapioca na hora.</h2>
+        <p>Servido todos os dias das 8h às 10h30, no salão com vista para o jardim. Tudo preparado aqui, com ingredientes da região.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Galeria</div>
+      <h2>Um pouquinho da pousada</h2>
+    </div>
+    <div class="gal">
+      <img class="big" src="img/piscina-entardecer.webp" alt="Piscina ao entardecer com espreguiçadeiras">
+      <img src="img/quarto-dossel.webp" alt="Suíte com cama de dossel">
+      <img src="img/suite-hidro.webp" alt="Banheiro com hidromassagem">
+      <img src="img/cafe-mesa.webp" alt="Mesa do café da manhã no quiosque">
+      <img src="img/bangalo-fachada.webp" alt="Bangalô no jardim">
+      <img class="wide" src="img/jardim-noite.webp" alt="Jardim iluminado ao entardecer">
+      <img src="img/sala-bangalo.webp" alt="Sala do bangalô">
+      <img src="img/cafe-frutas.webp" alt="Frutas do café da manhã">
+      <img class="wide" src="img/jardim-dia.webp" alt="Jardim tropical durante o dia">
+      <img class="wide" src="img/cafe-buffet.webp" alt="Buffet do café da manhã">
+    </div>
+  </div>
+</section>
+<div class="lb" id="lb"><img alt=""></div>
+
+<section class="revs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Avaliações</div>
+      <h2>O que dizem nossos hóspedes</h2>
+    </div>
+    <div class="rgrid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"Lugar mágico! O jardim é lindo demais e o café da manhã é um dos melhores que já tomamos. Já queremos voltar."</p><small>Hóspede · Google</small></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Atendimento impecável dos donos, tudo muito limpo e a suíte com hidro foi perfeita para nossa lua de mel."</p><small>Hóspede · Booking</small></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Pertinho da praia e super tranquilo. As crianças amaram o gramado e a piscina. Recomendo muito!"</p><small>Hóspede · Google</small></div>
+    </div>
+    <div class="score"><span><b>9,6</b>Booking</span><span><b>4,9</b>Google</span><span><b>4,9</b>Airbnb</span></div>
+    <p class="illu">Avaliações e notas ilustrativas. No site real entram as avaliações verdadeiras da pousada.</p>
+  </div>
+</section>
+
+<section id="local">
+  <div class="wrap loc">
+    <div>
+      <div class="eyebrow">Localização</div>
+      <h2>Pertinho de tudo, longe do barulho.</h2>
+      <p style="color:var(--mut);font-size:17px">Trancoso, sul da Bahia. Endereço completo enviado na confirmação da reserva.</p>
+      <ul>
+        <li><span>Praia mais próxima</span><span>5 min a pé</span></li>
+        <li><span>Quadrado de Trancoso</span><span>8 min de carro</span></li>
+        <li><span>Aeroporto de Porto Seguro</span><span>~1h de carro</span></li>
+        <li><span>Estacionamento</span><span>Privativo e gratuito</span></li>
+      </ul>
+    </div>
+    <div class="map"><iframe title="Mapa de Trancoso, Bahia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Trancoso,+Porto+Seguro+-+BA&z=13&output=embed"></iframe></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head" style="margin-bottom:24px">
+      <div class="eyebrow">Dúvidas</div>
+      <h2>Antes de você chegar</h2>
+    </div>
+    <details><summary>Quais os horários de check-in e check-out?</summary><p>Check-in a partir das 14h e check-out até às 12h. Reservando direto, você ganha late checkout até às 15h, sujeito à disponibilidade.</p></details>
+    <details><summary>O café da manhã está incluso?</summary><p>Sim, em todas as acomodações, servido das 8h às 10h30.</p></details>
+    <details><summary>Aceitam pets?</summary><p>Aceitamos pets de pequeno porte em acomodações selecionadas. Consulte pelo WhatsApp.</p></details>
+    <details><summary>Crianças pagam?</summary><p>Crianças até 5 anos não pagam na mesma acomodação dos pais. Acima disso, consulte valores.</p></details>
+    <details><summary>Como funciona o pagamento?</summary><p>Para confirmar a reserva pedimos um sinal via Pix e o restante no check-in. Tudo combinado direto pelo WhatsApp, sem taxas de plataforma.</p></details>
+    <details><summary>Qual a política de cancelamento?</summary><p>Cancelamentos com até 15 dias de antecedência têm o sinal devolvido. Em feriados e alta temporada as condições podem variar.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="eyebrow">Alta temporada chegando</div>
+    <h2>Garanta suas datas de verão.</h2>
+    <p>Réveillon, janeiro e Carnaval costumam lotar cedo. Consulte a disponibilidade agora e fale direto com a gente.</p>
+    <a href="#reservar" class="btn btn-wa">Consultar disponibilidade</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><div class="logo"><strong>Site de Demonstração</strong><span>Sua pousada aqui</span></div><p style="margin-top:14px;max-width:320px">Bangalôs e suítes entre coqueiros, no sul da Bahia.</p></div>
+    <div><h4>Contato</h4><p><a href="#reservar">WhatsApp: reservas</a><br>Trancoso · Porto Seguro · BA</p></div>
+    <div><h4>Horários</h4><p>Check-in: a partir das 14h<br>Check-out: até 12h<br>Café: 8h às 10h30</p></div>
+  </div>
+  <div class="credit">Site de demonstração · textos e avaliações ilustrativos · fotos: Marco Yamin · criado por <a href="../../">Visuais que Vendem · Claudio Henrique</a><br>*Benefícios ilustrativos, definidos por cada pousada.</div>
+</footer>
+
+<a class="fab" href="#reservar" aria-label="Reservar pelo WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4C5.4 9.8 10.2 5 16 5s10.6 4.8 10.6 10.6S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+
+<script>
+// Número que recebe as reservas (troque pelo WhatsApp da pousada, só dígitos com DDI + DDD)
+const WHATS = '5511959362012';
+const NOME = 'Site de Demonstração';
+
+const $ = id => document.getElementById(id);
+const fIn = $('in'), fOut = $('out'), note = $('nights');
+const iso = d => d.toISOString().slice(0,10);
+const br = s => s.split('-').reverse().join('/');
+const today = new Date(); today.setHours(0,0,0,0);
+fIn.min = iso(today);
+fOut.min = iso(new Date(today.getTime()+864e5));
+
+function nights(){
+  if(!fIn.value || !fOut.value) return 0;
+  return Math.round((new Date(fOut.value) - new Date(fIn.value)) / 864e5);
+}
+function refresh(){
+  if(fIn.value){
+    const next = new Date(fIn.value); next.setDate(next.getDate()+1);
+    fOut.min = iso(next);
+    if(fOut.value && fOut.value <= fIn.value) fOut.value = iso(next);
+  }
+  const n = nights();
+  note.className = '';
+  note.textContent = n > 0 ? `${n} ${n===1?'noite':'noites'} · ${br(fIn.value)} a ${br(fOut.value)}` : 'Escolha as datas da sua estadia';
+}
+fIn.addEventListener('change', refresh);
+fOut.addEventListener('change', refresh);
+
+$('reservar').addEventListener('submit', e => {
+  e.preventDefault();
+  const n = nights();
+  if(n <= 0){ note.textContent = 'Escolha a data de check-in e check-out 🙂'; note.className = 'err'; (fIn.value ? fOut : fIn).focus(); return; }
+  const ad = +$('ad').value, cr = +$('cr').value;
+  const pessoas = `${ad} ${ad===1?'adulto':'adultos'}` + (cr ? ` e ${cr} ${cr===1?'criança':'crianças'}` : '');
+  const msg = `Olá! Vim pelo site (${NOME}) e gostaria de consultar disponibilidade:\n\n` +
+    `🛏️ Acomodação: ${$('acomod').value}\n` +
+    `📅 Check-in: ${br(fIn.value)}\n` +
+    `📅 Check-out: ${br(fOut.value)} (${n} ${n===1?'noite':'noites'})\n` +
+    `👥 ${pessoas}\n\nAguardo o retorno!`;
+  window.open(`https://wa.me/${WHATS}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+});
+
+// botões "Consultar este..." selecionam a acomodação e levam ao formulário
+document.querySelectorAll('[data-room]').forEach(b => b.addEventListener('click', () => {
+  $('acomod').value = b.dataset.room;
+  $('reservar').scrollIntoView({behavior:'smooth', block:'center'});
+  setTimeout(() => (fIn.value ? fOut : fIn).focus({preventScroll:true}), 500);
+}));
+
+// galeria com zoom
+const lb = $('lb');
+document.querySelectorAll('.gal img').forEach(i => i.addEventListener('click', () => { lb.querySelector('img').src = i.src; lb.classList.add('on'); }));
+lb.addEventListener('click', () => lb.classList.remove('on'));
+document.addEventListener('keydown', e => { if(e.key === 'Escape') lb.classList.remove('on'); });
+</script>
+</body>
+</html>
