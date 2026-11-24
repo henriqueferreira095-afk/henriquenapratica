@@ -46,7 +46,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 nav .btn{padding:11px 22px}
 
 /* hero */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;padding:150px 0 50px;background:#1d2a23 url(img/jardim-noite.webp) center/cover no-repeat}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;padding:150px 0 50px;background:#1d2a23 url(img/piscina-entardecer.webp) center/cover no-repeat}
 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.15) 40%,rgba(10,20,15,.75) 100%)}
 .hero .wrap{position:relative;width:100%}
 .hero .eyebrow{color:var(--gold)}
@@ -112,7 +112,7 @@ nav .btn{padding:11px 22px}
 
 /* café */
 .cafe{position:relative;color:#fff;padding:0}
-.cafe .bg{position:relative;min-height:560px;background:url(img/cafe-frutas.webp) center/cover;display:flex;align-items:center}
+.cafe .bg{position:relative;min-height:560px;background:url(img/cafe-buffet.webp) center/cover;display:flex;align-items:center}
 .cafe .bg:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,30,25,.85) 0%,rgba(20,30,25,.45) 55%,rgba(20,30,25,0) 100%)}
 .cafe .wrap{position:relative;width:100%}
 .cafe .txt{max-width:500px}
@@ -121,10 +121,11 @@ nav .btn{padding:11px 22px}
 .cafe p{font-size:17px;opacity:.92}
 
 /* galeria */
-.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}
 .gal img{width:100%;height:100%;object-fit:cover;border-radius:16px;cursor:zoom-in;transition:transform .3s}
 .gal img:hover{transform:scale(1.015)}
-.gal .big{grid-row:1/3}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .wide{grid-column:span 2}
 .lb{position:fixed;inset:0;background:rgba(10,14,12,.92);display:none;align-items:center;justify-content:center;z-index:60;padding:24px;cursor:zoom-out}
 .lb.on{display:flex}
 .lb img{max-height:90vh;border-radius:12px}
@@ -158,7 +159,7 @@ details[open] summary:after{content:"–"}
 details p{color:var(--mut);margin:10px 0 0}
 
 /* final */
-.final{position:relative;color:#fff;text-align:center;background:url(img/jardim-dia.webp) center/cover}
+.final{position:relative;color:#fff;text-align:center;background:url(img/jardim-noite.webp) center/cover}
 .final:before{content:"";position:absolute;inset:0;background:rgba(20,40,30,.72)}
 .final .wrap{position:relative}
 .final h2{font-size:clamp(2.6rem,5.5vw,4.4rem);margin:12px 0 16px}
@@ -182,8 +183,9 @@ footer a:hover{color:#fff}
   .about,.direct,.loc{grid-template-columns:1fr;gap:40px}
   .about .ph .stamp{right:12px}
   .grid3,.rgrid{grid-template-columns:1fr}
-  .gal{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
-  .gal .big{grid-column:1/-1;grid-row:auto}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .gal .big{grid-column:1/-1;grid-row:span 2}
+  .gal .wide{grid-column:1/-1}
   footer .wrap{grid-template-columns:1fr}
 }
 @media (max-width:560px){
@@ -225,7 +227,7 @@ footer a:hover{color:#fff}
           <option>Qualquer acomodação</option>
           <option>Bangalô Coqueiral</option>
           <option>Suíte Master com Hidro</option>
-          <option>Chalé Jardim</option>
+          <option>Bangalô Família</option>
         </select></div>
       <div><label for="in">Check-in</label><input type="date" id="in" required></div>
       <div><label for="out">Check-out</label><input type="date" id="out" required></div>
@@ -268,30 +270,30 @@ footer a:hover{color:#fff}
     </div>
     <div class="grid3">
       <div class="room">
-        <div class="img"><img src="img/sala-bangalo.webp" alt="Sala do Bangalô Coqueiral com sofá em alvenaria e teto de piaçava" loading="lazy"><span class="cap">Até 4 pessoas</span></div>
+        <div class="img"><img src="img/bangalo-fachada.webp" alt="Bangalô com telhado de piaçava e deck de madeira no jardim" loading="lazy"><span class="cap">Até 3 pessoas</span></div>
         <div class="body">
           <h3>Bangalô Coqueiral</h3>
-          <p>Bangalô com sala ampla, teto de piaçava e janela para o jardim. Ideal para famílias.</p>
-          <div class="amen"><span>Sala de estar</span><span>Smart TV</span><span>Varanda</span><span>Frigobar</span></div>
+          <p>Bangalô independente com telhado de piaçava, deck de madeira e redes, cercado pelo jardim tropical.</p>
+          <div class="amen"><span>Deck com redes</span><span>Cama king</span><span>Ar-condicionado</span><span>Frigobar</span></div>
           <button class="btn btn-dark" data-room="Bangalô Coqueiral">Consultar este bangalô</button>
         </div>
       </div>
       <div class="room">
-        <div class="img"><img src="img/suite-hidro.webp" alt="Banheiro da Suíte Master com banheira de hidromassagem" loading="lazy"><span class="cap">Casal</span></div>
+        <div class="img"><img src="img/quarto-dossel.webp" alt="Suíte Master com cama de dossel e piso de madeira" loading="lazy"><span class="cap">Casal</span></div>
         <div class="body">
           <h3>Suíte Master com Hidro</h3>
-          <p>Nossa suíte mais romântica, com banheira de hidromassagem e madeira por todo lado.</p>
+          <p>Nossa suíte mais romântica: cama com dossel, piso de madeira e banheiro com hidromassagem.</p>
           <div class="amen"><span>Hidromassagem</span><span>Cama king</span><span>Amenities</span><span>Roupões</span></div>
           <button class="btn btn-dark" data-room="Suíte Master com Hidro">Consultar esta suíte</button>
         </div>
       </div>
       <div class="room">
-        <div class="img"><img src="img/jardim-noite.webp" alt="Chalés iluminados no jardim ao entardecer" loading="lazy"><span class="cap">Até 3 pessoas</span></div>
+        <div class="img"><img src="img/sala-bangalo.webp" alt="Sala do Bangalô Família com sofá em alvenaria e teto de piaçava" loading="lazy"><span class="cap">Até 4 pessoas</span></div>
         <div class="body">
-          <h3>Chalé Jardim</h3>
-          <p>Chalé aconchegante com acesso direto ao gramado, a poucos passos da piscina e do bar.</p>
-          <div class="amen"><span>Acesso ao jardim</span><span>Rede na varanda</span><span>Cama queen</span><span>Frigobar</span></div>
-          <button class="btn btn-dark" data-room="Chalé Jardim">Consultar este chalé</button>
+          <h3>Bangalô Família</h3>
+          <p>Bangalô com sala ampla, teto de piaçava e janela para o jardim. Espaço de sobra para a família.</p>
+          <div class="amen"><span>Sala de estar</span><span>Smart TV</span><span>2 ambientes</span><span>Frigobar</span></div>
+          <button class="btn btn-dark" data-room="Bangalô Família">Consultar este bangalô</button>
         </div>
       </div>
     </div>
@@ -334,11 +336,16 @@ footer a:hover{color:#fff}
       <h2>Um pouquinho da pousada</h2>
     </div>
     <div class="gal">
-      <img class="big" src="img/jardim-noite.webp" alt="Jardim iluminado ao entardecer" loading="lazy">
-      <img src="img/sala-bangalo.webp" alt="Sala do bangalô" loading="lazy">
-      <img src="img/suite-hidro.webp" alt="Suíte com hidromassagem" loading="lazy">
-      <img src="img/jardim-dia.webp" alt="Jardim tropical durante o dia" loading="lazy">
-      <img src="img/cafe-frutas.webp" alt="Frutas do café da manhã" loading="lazy">
+      <img class="big" src="img/piscina-entardecer.webp" alt="Piscina ao entardecer com espreguiçadeiras">
+      <img src="img/quarto-dossel.webp" alt="Suíte com cama de dossel">
+      <img src="img/suite-hidro.webp" alt="Banheiro com hidromassagem">
+      <img src="img/cafe-mesa.webp" alt="Mesa do café da manhã no quiosque">
+      <img src="img/bangalo-fachada.webp" alt="Bangalô no jardim">
+      <img class="wide" src="img/jardim-noite.webp" alt="Jardim iluminado ao entardecer">
+      <img src="img/sala-bangalo.webp" alt="Sala do bangalô">
+      <img src="img/cafe-frutas.webp" alt="Frutas do café da manhã">
+      <img class="wide" src="img/jardim-dia.webp" alt="Jardim tropical durante o dia">
+      <img class="wide" src="img/cafe-buffet.webp" alt="Buffet do café da manhã">
     </div>
   </div>
 </section>
