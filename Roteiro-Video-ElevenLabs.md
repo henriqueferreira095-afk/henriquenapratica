@@ -83,15 +83,17 @@ Visuais que Vendem. Seu hóspede, direto com você.
 
 ---
 
-Sua pousada está pagando comissão até de quem queria reservar direto com você.
+Sua pousada está pagando comissão para o Booking e para o Airbnb... até de hóspede que queria reservar direto com você.
 
-O hóspede te acha no Booking, procura o seu Instagram para falar direto... não encontra site nenhum, e volta para o aplicativo.
+O hóspede te acha no Booking, procura o seu Instagram para falar direto... não encontra site nenhum, e volta para o aplicativo. Resultado: quinze, vinte por cento da reserva ficam com a plataforma.
 
-Eu sou o Claudio, da Visuais que Vendem. Eu crio o site da sua pousada: o hóspede escolhe as datas e cai direto no seu WhatsApp. Sem comissão.
+Eu sou o Claudio, da Visuais que Vendem. Eu crio o site próprio da sua pousada: o hóspede escolhe as datas e cai direto no seu WhatsApp. Sem comissão de plataforma nenhuma.
 
-Você aprova, e nas primeiras horas o site já está no ar. Custa menos do que duas comissões, você só paga o restante quando aprovar, e ainda tem noventa dias de garantia com manutenção grátis.
+E você não precisa decidir no escuro: eu te envio um site de teste da sua pousada, para você ver como fica antes de fechar.
 
-Me chama no WhatsApp: eu monto uma prévia da sua pousada, de graça.
+Você aprova, e nas primeiras horas o site já está no ar. Custa menos do que a comissão de duas reservas, você só paga o restante depois de aprovar, e ainda tem noventa dias de garantia com manutenção grátis.
+
+Me chama no WhatsApp e peça o seu site de teste. É de graça.
 
 ---
 
